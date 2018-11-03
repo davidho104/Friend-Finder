@@ -1,4 +1,4 @@
-# **Friend-finder**
+# **Friend-Finder**
 
 Technologies Utilized: Node.js, Express, Heroku
 __________________________________________________________________________________________
