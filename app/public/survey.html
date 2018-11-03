@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>About you</h1>
+        <hr><br>
+        <h4>Your Name</h4>
+        <input type="text" class="form-control" id="yourName" placeholder="Jane Doe" required>
+        <br>
+        <h4>Link to Photo Image</h4>
+        <input type="text" class="form-control" id="yourPhoto" placeholder="http://yourphotolink.com.jpg/" required>
+        <br>
+        <hr><br>
+        <h4><b>Question 1</b></h4>
+        <h6>I am an extrovert</h6>
+        <select class="select" id="q1">
+            <option selected>Select</option>
+            <option value="1">1 (Not Very Likely)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Likely)</option>
+        </select>
+        <br><br>
+        <h4><b>Question 2</b></h4>
+        <h6>I am always happy</h6>
+        <select class="select" id="q2">
+            <option selected>Select</option>
+            <option value="1">1 (Not Very Likely)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Likely)</option>
+        </select>
+        <br><br>
+        <h4><b>Question 3</b></h4>
+        <h6>I always seek adventure</h6>
+        <select class="select" id="q3">
+            <option selected>Select</option>
+            <option value="1">1 (Not Very Likely)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Likely)</option>
+        </select>
+        <br><br>
+        <h4><b>Question 4</b></h4>
+        <h6>I like music</h6>
+        <select class="select" id="q4">
+            <option selected>Select</option>
+            <option value="1">1 (Not Very Likely)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Likely)</option>
+        </select>
+        <br><br>
+        <h4><b>Question 5</b></h4>
+        <h6>I get angry easily</h6>
+        <select class="select" id="q5">
+            <option selected>Select</option>
+            <option value="1">1 (Not Very Likely)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Likely)</option>
+        </select>
+        <br><br>
+        <h4><b>Question 6</b></h4>
+        <h6>I like video games</h6>
+        <select class="select" id="q6">
+            <option selected>Select</option>
+            <option value="1">1 (Not Very Likely)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Likely)</option>
+        </select>
+        <br><br>
+        <h4><b>Question 7</b></h4>
+        <h6>I am confident</h6>
+        <select class="select" id="q7">
+            <option selected>Select</option>
+            <option value="1">1 (Not Very Likely)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Likely)</option>
+        </select>
+        <br><br>
+        <h4><b>Question 8</b></h4>
+        <h6>I always stick to the rules</h6>
+        <select class="select" id="q8">
+            <option selected>Select</option>
+            <option value="1">1 (Not Very Likely)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Likely)</option>
+        </select>
+        <br><br>
+        <h4><b>Question 9</b></h4>
+        <h6>I like to work out</h6>
+        <select class="select" id="q9">
+            <option selected>Select</option>
+            <option value="1">1 (Not Very Likely)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Likely)</option>
+        </select>
+        <br><br>
+        <h4><b>Question 10</b></h4>
+        <h6>I am very patient</h6>
+        <select class="select" id="q10">
+            <option selected>Select</option>
+            <option value="1">1 (Not Very Likely)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Very Likely)</option>
+        </select>
+        <br><br>
+        <button type="button" id="submitButton" class="btn btn-lg btn-primary">Submit
+            Survey</button>
+        <br><br>
+        <footer class="footer">
+            <a href="../data/friends.js">API Friends List</a> | <a href="https://github.com/davidho104/Friend-Finder">GitHub
+                Repo</a>
+        </footer>
+        <br>
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="matchModalLabel">Best Match</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png"
+                        alt="photo">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#submitButton").on("click", function (event) {
+            event.preventDefault();
+            let newUser = {
+                name: $("#yourName").val().trim(),
+                photo: $("#yourPhoto").val().trim(),
+                scores: [
+                    $("q1").val(),
+                    $("q2").val(),
+                    $("q3").val(),
+                    $("q4").val(),
+                    $("q5").val(),
+                    $("q6").val(),
+                    $("q7").val(),
+                    $("q8").val(),
+                    $("q9").val(),
+                    $("q10").val(),
+                ]
+            };
+            $.post("/api/friends", newUser, function(data){
+                $("#match-name").text(data.name);
+                $("#match-img").attr("src",data.photo);
+                $("#resultModal").modal("toggle");
+            })
+        });
+    </script>
+</body>
+</html>
